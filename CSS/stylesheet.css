@@ -1,0 +1,158 @@
+header {
+		border 0px;
+		padding 0px;
+		text-align: center;
+		background-image: url("../Media/header_image.jpeg");
+		background-size: cover;
+		color: white;
+	}
+	a {
+		text-decoration: none;
+		color: white;
+	}
+	h1 {
+		font-size: 500%;
+		background-color: rgba(147,175,152, 0.5);
+		font-style: italic;
+	}
+	.subheading {
+		font-size: 50%;
+	}
+	h2 {
+		font-size: 300%;
+		text-align: center;
+		font-style: italic;
+	}
+	h3 {
+		font-size: 200%;
+		
+	}
+	ul {
+		padding: 10px;
+		background: rgba(147,175,152, 0.5);
+	}
+	li {
+		display: inline;
+		padding: 0px 10px 0px 10px;
+		font-size: 20px;
+	}
+	article {
+		max-width: 80%;
+		padding: 20px;
+		margin: 0 auto;
+		color: white;
+		/* rgba(241,222,153,1) */
+		background-color: rgba(33,79,103, 0.9);
+	}
+	body {
+		background-size: cover;
+		background-color: rgba(110,173,178,0.7);
+	}
+	p {
+		font-size: 140%;
+		text-align: justify;
+		font-style: italic;
+		margin: 0px 20px 0px 20px;
+	}
+	button {
+		margin: 10px;
+		border: none; 
+		outline: none; 
+		background-color: rgba(147,175,152, 0.5); 
+		color: white; 
+		border-radius: 5px; 
+		padding: 8px;
+	}
+	footer {
+		font-size: 90%;
+		text-align: right;
+		padding: 0px 30px 0px 0px;
+	}
+	form {
+		text-align: center;
+	}
+	img {
+		float: left;
+		margin: 0px 10px 10px 0px;
+	}
+	.submit_button{
+			margin: 10px;
+			border: none; 
+			outline: none; 
+			background-color: rgba(147,175,152, 0.5); 
+			color: white; 
+			border-radius: 5px; 
+			padding: 8px;
+		}
+	.us_link {
+			text-decoration: underline;
+		}
+	.contact{
+			font-size: 100%;
+			margin: 20px;
+			font-style: italic;
+		}
+	.centred{
+		text-align: center;
+	}
+	.benefits{
+		background-color: rgba(110,173,178,0.7);
+	}
+	@media (max-width: 500px) {
+		h1 {
+			font-size: 300%;
+		}
+		li {
+			padding: 5px;
+			display: block;
+		}
+		
+	}
+	.highlight:hover {
+		background: rgba(187,215,192, 0.5);
+		padding: 10px;
+	}
+	li a:hover, .dropdown:hover .dropbtn .highlight:hover {
+		background: rgba(187,215,192, 0.5);
+		padding: 10px;
+	}
+
+	li.dropdown {
+		display: inline-block;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: rgba(147,175,152, 0.8);
+		min-width: 160px;
+		z-index: 1;
+	}
+
+	.dropdown-content a {
+		color: white;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+
+	.dropdown-content a:hover {
+		background-color: rgba(187,215,192, 0.5);
+		}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+	.textwrap_right{
+		float: right;
+		margin: 0px 0px 10px 10px;
+	}
+	.textalign_right{
+		text-align: right;
+		margin-right: 10px;
+	}
+	#myBtn:hover {
+		background-color: rgba(187,215,192, 0.5); 
+		padding: 10px;
+	}

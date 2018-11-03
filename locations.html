@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
+	<link rel="shortcut icon" href="media/favicon.jpg" />
+	<title>Peace Of Mind</title>
+	<style>
+	h3{
+		font-size: 24px;
+	}
+	p {
+		text-align: left;
+	}
+	@media (min-width: 501px){
+		#rightblock{
+			float: right;
+			margin: 0px 100px;
+			max-width: 200px;
+		}
+		#leftblock{
+			float: left;
+			margin: 0px 0px 0px 100px;
+			max-width: 200px;
+		}
+		.wrapper{
+			margin: auto 0;
+			height: 500px;
+		}
+	}
+	@media (max-width: 500px){
+		.wrapper{
+			margin: auto 0;
+			height: 1000px;
+		}
+	}
+	
+	</style>
+	<script>
+	function submitEmail(email) {
+		
+			alert("Thank you for your subscription!");
+		
+	}
+	window.onscroll = function() {scrollFunction()};
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myBtn").style.display = "block";
+		} else {
+			document.getElementById("myBtn").style.display = "none";
+		}
+	}
+	function topFunction() {
+		document.body.scrollTop = 0; // For Chrome, Safari and Opera
+		document.documentElement.scrollTop = 0; // For IE and Firefox
+	}
+</script>
+</head>
+<body>
+	<article>
+	<header>
+		.		
+		<h1>Peace Of Mind<br><div class="subheading">Yoga Classes</div></h1>
+		<ul>
+			<li><a href="index.html" class = "highlight">Home</a></li>
+			<li><a href="courses.html" class = "highlight">Courses</a></li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">User Stories</a>
+				<div class="dropdown-content">
+					<a href="user_stories.html#susans_story">Susan's Story</a>
+					<a href="user_stories.html#brendans_story">Brendan's Story</a>
+					<a href="user_stories.html#mariyams_story">Mariyam's Story</a>
+				</div>
+			<li><a href="locations.html" class = "highlight">Locations</a></li>
+			<li><a href="signup.html" class = "highlight">Join Today!</a></li>
+			<li><a href="contact.html" class = "highlight">Contact</a></li>
+		</ul>
+		
+</header>
+	<hr>
+	<h2>Locations</h2>
+	<p class="centred">Find a center close to you!</p><br>
+	<div id="googleMap" style="width:100%;height:400px"></div>
+
+	<script>
+	function myMap() {
+	var rathminescenter={lat: 53.32243999780465, lng: -6.266326901796901};
+	var drumcondracenter={lat: 53.36200024950358, lng: -6.25911712396487};
+	var ballsbridgecenter={lat: 53.33043699731105, lng: -6.233024594667995};
+	var blanchardstowncenter={lat: 53.383097697513804, lng: -6.359710690859401};
+	var mapProp= {
+		center:new google.maps.LatLng(53.34560667126015,-6.262207028750026),
+		zoom:11,
+	};
+	var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	var marker = new google.maps.Marker({
+          position: rathminescenter,
+          map: map
+        });
+	var marker = new google.maps.Marker({
+          position: drumcondracenter,
+          map: map
+        });
+	var marker = new google.maps.Marker({
+          position: ballsbridgecenter,
+          map: map
+        });
+	var marker = new google.maps.Marker({
+          position: blanchardstowncenter,
+          map: map
+        });
+	}
+	$(window).on('resize', function() {
+    if($(window).height() > 400) {
+        $('#rightblock').addClass('test');
+    
+    }else{
+        $('#right').removeClass('test');
+    }
+})
+	</script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOuRPu0gAPmpN-JFDN6CYmlvYlH0NDaUk&callback=myMap "></script>
+	
+	<div class="wrapper">
+	<div id="leftblock">
+	<h3><br>Drumcondra Main Centre</h3>
+	<p>Unit 23<br>Drumcondra Business Park<br>Dublin 9<br>+353862738492<br>
+	
+	<h3><br>Rathmines Centre</h3>
+	<p>14 Mulberry Road<br>Glen Road<br>Dublin 6<br>+353856238410<br>
+	</div>
+	
+	<div id="rightblock">
+	<h3><br>Ballsbridge Centre</h3>
+	<p>38 Waterside Park<br>Cherry Avenue<br>Dublin 4<br>+35382814499<br>
+	
+	<h3><br>Blanchardstown Centre</h3>
+	<p>Unit 6<br>Blanchardstown Shopping Centre<br>Dublin 15<br>+35380384921<br>
+	</div>
+	</div>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+	<hr>
+	<footer>
+		<form name="emailSubmit" onsubmit="return submitEmail()">
+			<br>Subscribe to our newsletter!<br> <input type="email" name="email" id="email" placeholder="Email">
+			<input type="submit" value="Submit" onclick="submitEmail(document.getElementByID('email').value)">
+		</form>
+		<br>Contact us at:<br>+353862738492<br>info@peaceofmind.ie
+	</footer>
+	
+	</article>
+	
+</body>

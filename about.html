@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
+	<link rel="shortcut icon" href="media/favicon.jpg" />
+	<title>Peace Of Mind</title>
+	<script>
+	function submitEmail(email) {
+		
+			alert("Thank you for your subscription!");
+		
+	}
+</script>
+</head>
+<body>
+	<article>
+	<header>
+		.		
+		<h1>Peace Of Mind<br><div class="subheading">Yoga Classes</div></h1>
+		<ul>
+			<li><a href="index.html" class = "highlight">Home</a></li>
+			<li><a href="about.html" class = "highlight">About</a></li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">User Stories</a>
+				<div class="dropdown-content">
+					<a href="user_stories.html#susans_story">Susan's Story</a>
+					<a href="user_stories.html#brendans_story">Brendan's Story</a>
+					<a href="user_stories.html#mariyams_story">Mariyam's Story</a>
+				</div>
+			<li><a href="locations.html" class = "highlight">Locations</a></li>
+			<li><a href="signup.html" class = "highlight">Join Today!</a></li>
+			<li><a href="contact.html" class = "highlight">Contact</a></li>
+		</ul>
+		
+</header>
+	<hr>
+	<h2>About Peace Of Mind</h2>
+	<p>Peace Of Mind offers a range of yoga classes aimed at relieving stress, improving fitness and achieving optimum wellbeing. Throughout our many years of service we have have helped hundreds of clients use yoga to overcome injuries, get their ideal body and change their lives for the better.</p>
+	<p><br>See some of our client's stories <a href="user_stories.html" class="us_link">here</a></p>
+	<p><br>See our range of state of the art locations <a href="location.html" class="us_link">here</a></p>
+	<p><br>Book your free trial class today <a href="signup.html" class="us_link">here</a></p>
+	<p><br>For further information see <a href="contact.html" class="us_link">here</a></p>
+	<hr>
+	<footer>
+		<form name="emailSubmit" onsubmit="return submitEmail()">
+			<br>Subscribe to our newsletter!<br> <input type="email" name="email" id="email" placeholder="Email">
+			<input type="submit" value="Submit" onclick="submitEmail(document.getElementByID('email').value)">
+		</form>
+		<br>Contact us at:<br>+353862738492<br>info@peaceofmind.ie
+	</footer>
+	
+	</article>
+	
+</body>

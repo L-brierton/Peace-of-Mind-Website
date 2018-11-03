@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
+	<link rel="shortcut icon" href="media/favicon.jpg" />
+	<title>Peace Of Mind</title>
+	<style>
+		#signup{
+			font-size: 20px;
+			max-height: 800px;
+			border-style: solid;
+		}
+		select{
+			width: 150px;
+		}
+		h3{
+			text-align: center;
+		}
+		
+		
+	</style>
+	<script>
+	function submitEmail(email) {
+		alert("Thank you for your subscription!");
+	}
+	function validateForm(){
+		var fname=document.getElementById("firstname").value;
+		var sname=document.getElementById("surname").value;
+		var esub=document.getElementById("emailsub").value;
+		var loc=document.getElementById("loc").value;
+		var day=document.getElementById("day").value;
+		var time=document.getElementById("time").value;
+		if ((fname=="")||(sname=="")||(emailsub=="")){
+			alert("Please complete the form");
+		}else{
+			var string = "Thank you for signing up, "+fname+".\nYour free class takes place on "+day+" at "+time+" in the "+loc+" Centre";
+			alert(string);
+		}
+		
+	}
+</script>
+
+
+</head>
+<body>
+	<article>
+	<header>
+		.		
+		<h1>Peace Of Mind<br><div class="subheading">Yoga Classes</div></h1>
+		<ul>
+			<li><a href="index.html" class = "highlight">Home</a></li>
+			<li><a href="courses.html" class = "highlight">Courses</a></li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">User Stories</a>
+				<div class="dropdown-content">
+					<a href="user_stories.html#susans_story">Susan's Story</a>
+					<a href="user_stories.html#brendans_story">Brendan's Story</a>
+					<a href="user_stories.html#mariyams_story">Mariyam's Story</a>
+				</div>
+			<li><a href="locations.html" class = "highlight">Locations</a></li>
+			<li><a href="signup.html" class = "highlight">Join Today!</a></li>
+			<li><a href="contact.html" class = "highlight">Contact</a></li>
+		</ul>
+		
+</header>
+	<hr>
+	<h2>Join today!</h2>
+	
+	
+	<form id="signup">
+	<h3>Sign up today for a free trial class!</h3>
+		First name:<br>
+		<input type="text" name="firstname" id="firstname" placeholder="First Name" required><br>
+		<br>Surname:<br>
+		<input type="text" name="surname" id="surname" placeholder="Surname" required><br>
+		<br>Email:<br>
+		<input type="email" name="email" id="emailsub" placeholder="Email" required><br>
+		<br><small>Do you wish to subscribe to our newsletter?</small>
+		<input type="checkbox" name="subscribe" value="subscribe"><br>
+		<br>Select a location:<br>
+		 <select name="loc" id="loc">
+		  <option value="Ballsbridge">Ballsbridge</option>
+		  <option value="Blanchardstown">Blanchardstown</option>
+		  <option value="Drumcondra">Drumcondra</option>
+		  <option value="Rathmines">Rathmines</option>
+		</select>
+		<br>Select a day:<br>
+		 <select name="day" id="day">
+		  <option value="Monday">Monday</option>
+		  <option value="Tuesday">Tuesday</option>
+		  <option value="Wednesday">Wednesday</option>
+		  <option value="Thursday">Thursday</option>
+		  <option value="Friday">Friday</option>
+		  <option value="Saturday">Saturday</option>
+		  <option value="Sunday">Sunday</option>
+		  </select>
+		  <br>Select a time:<br>
+		 <select name="day" id="time">
+		  <option value="3pm">15:00</option>
+		  <option value="5pm">17:00</option>
+		  <option value="7pm">19:00</option>
+		</select><br>
+		
+		<br><input type="submit" value="Submit" onclick="validateForm()" class="submit_button" id="myBtn">
+	</form><br>
+
+	
+	
+	
+	<hr>
+	<footer>
+		<form name="emailSubmit" onsubmit="return submitEmail()">
+			<br>Subscribe to our newsletter!<br> <input type="email" name="email" id="email" placeholder="Email">
+			<input type="submit" value="Submit" onclick="submitEmail(document.getElementByID('email').value)" class="submit_button" id="myBtn">
+		</form>
+		<br>Contact us at:<br>+353862738492<br>info@peaceofmind.ie
+	</footer>
+	
+	</article>
+	
+</body>

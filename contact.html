@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
+	<link rel="shortcut icon" href="media/favicon.jpg" />
+	<title>Peace Of Mind</title>
+	<script>
+	function submitEmail(email) {
+		
+			alert("Thank you for your subscription!");
+		
+	}
+</script>
+</head>
+<body>
+	<article>
+	<header>
+		.		
+		<h1>Peace Of Mind<br><div class="subheading">Yoga Classes</div></h1>
+		<ul>
+			<li><a href="index.html" class = "highlight">Home</a></li>
+			<li><a href="courses.html" class = "highlight">Courses</a></li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">User Stories</a>
+				<div class="dropdown-content">
+					<a href="user_stories.html#susans_story">Susan's Story</a>
+					<a href="user_stories.html#brendans_story">Brendan's Story</a>
+					<a href="user_stories.html#mariyams_story">Mariyam's Story</a>
+				</div>
+			<li><a href="locations.html" class = "highlight">Locations</a></li>
+			<li><a href="signup.html" class = "highlight">Join Today!</a></li>
+			<li><a href="contact.html" class = "highlight">Contact</a></li>
+		</ul>
+		
+</header>
+	<hr>
+	<h2>Contact</h2>
+	<p>For further inquiry you can contact us at our main office at:</p>
+	<div class="contact"><br>Unit 23<br>Drumcondra Business Park<br>Dublin 9<br>+353862738492<br>info@peaceofmind.ie</div><br>
+	<hr>
+	<footer>
+		<form name="emailSubmit" onsubmit="return submitEmail()">
+			<br>Subscribe to our newsletter!<br> <input type="email" name="email" id="email" placeholder="Email">
+			<input type="submit" value="Submit" onclick="submitEmail(document.getElementByID('email').value)">
+		</form>
+		<br>Contact us at:<br>+353862738492<br>info@peaceofmind.ie
+	</footer>
+	
+	</article>
+	
+</body>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
+	<link rel="shortcut icon" href="media/favicon.jpg" />
+	<title>Peace Of Mind</title>
+	<style>
+	ol{
+		font-size: 150%;
+		font-style: italic;
+		text-decoration: underline;
+		text-align: center;
+	}
+	</style>
+	<script>
+	function submitEmail(email) {
+		
+			alert("Thank you for your subscription!");
+		
+	}
+	
+</script>
+</head>
+<body>
+	<article>
+	<header>
+		.		
+		<h1>Peace Of Mind<br><div class="subheading">Yoga Classes</div></h1>
+		<ul>
+			<li><a href="index.html" class = "highlight">Home</a></li>
+			<li><a href="courses.html" class = "highlight">Courses</a></li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">User Stories</a>
+				<div class="dropdown-content">
+					<a href="user_stories.html#susans_story">Susan's Story</a>
+					<a href="user_stories.html#brendans_story">Brendan's Story</a>
+					<a href="user_stories.html#mariyams_story">Mariyam's Story</a>
+				</div>
+			<li><a href="locations.html" class = "highlight">Locations</a></li>
+			<li><a href="signup.html" class = "highlight">Join Today!</a></li>
+			<li><a href="contact.html" class = "highlight">Contact</a></li>
+		</ul>
+		
+</header>
+	<hr>
+	<h2>10 Week Yoga Course</h2>
+	<p>Peace Of Mind offers a 10 Week course aimed at achieving optimum fitness and wellbeing for you!</p><br>
+	<ol>
+		<li><span style="display:block">Suitable for beginners and for all athletic ability</li>
+		<li><span style="display:block">Improves your mental wellbeing and lowers stress</li>
+		<li><span style="display:block">Tones your body and improves fitness</li>
+		<li><span style="display:block">Only &euro;5.99 per month!</li>
+	</ol>
+	<p class="centred"><br>Sign up for your <a href="signup.html" class="us_link">free trial class</a></p><br>
+	
+	<hr>
+	<footer>
+		<form name="emailSubmit" onsubmit="return submitEmail()">
+			<br>Subscribe to our newsletter!<br> <input type="email" name="email" id="email" placeholder="Email">
+			<input type="submit" value="Submit" onclick="submitEmail(document.getElementByID('email').value)">
+		</form>
+		<br>Contact us at:<br>+353862738492<br>info@peaceofmind.ie
+	</footer>
+	
+	</article>
+	
+</body>

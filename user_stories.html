@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="CSS/stylesheet.css">
+	<link rel="shortcut icon" href="media/favicon.jpg" />
+	<title>Peace Of Mind</title>
+	
+	<script>
+	function submitEmail(email) {
+		
+			alert("Thank you for your subscription!");
+		
+	}
+	window.onscroll = function() {scrollFunction()};
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myBtn").style.display = "block";
+		} else {
+			document.getElementById("myBtn").style.display = "none";
+		}
+	}
+	function topFunction() {
+		document.body.scrollTop = 0; // For Chrome, Safari and Opera
+		document.documentElement.scrollTop = 0; // For IE and Firefox
+	}
+</script>
+</head>
+<body>
+	<article>
+	<header>
+		.		
+		<h1>Peace Of Mind<br><div class="subheading">Yoga Classes</div></h1>
+		
+		<ul>
+			<li><a href="index.html" class = "highlight">Home</a></li>
+			<li><a href="courses.html" class = "highlight">Courses</a></li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">User Stories</a>
+				<div class="dropdown-content">
+					<a href="user_stories.html#susans_story">Susan's Story</a>
+					<a href="user_stories.html#brendans_story">Brendan's Story</a>
+					<a href="user_stories.html#mariyams_story">Mariyam's Story</a>
+				</div>
+			<li><a href="locations.html" class = "highlight">Locations</a></li>
+			<li><a href="signup.html" class = "highlight">Join Today!</a></li>
+			<li><a href="contact.html" class = "highlight">Contact</a></li>
+		</ul>
+</header>
+	<hr>
+	<h2>User Stories</h2>
+		<a name="susans_story"></a>
+		<h3>Susan's Story</h3>
+		<p><img src="Media/Susan.jpg" alt="Susan" style="width:150px;height:150px;">"I joined <strong>Peace Of Mind</strong> a few months back when the muscles in my right knee stopped me from hiking up the Wicklow & Sligo mountains. My doctor recommended some light exercise to help regain movement, and I was lucky enough to stumble across the <strong>Peace Of Mind</strong> club. They have by far the best teachers of Yoga I've experienced, always directing you with clear instructions, allowing the body to fully stretch into the pose before moving on in a continuous motion throughout the class that leaves me feeling energised, limbered up, and awake. They are a brilliant club and I'm sticking with them for the winter months because I need to be in top shape when the Spring comes and I get out onto those mountains again! I would highly recommend <strong>Peace Of Mind</strong> to all my friends"</p><br>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+		<a name="brendans_story"></a>
+	<h3 class="textalign_right">Brendan's Story</h3>
+		<p><img src="Media/Brendan.jpg" alt="Brendan" style="width:150px;height:150px;" class="textwrap_right">"I joined <strong>Peace Of Mind</strong> as a way to relieve stress after a hard day of work. I have poor flexibility and  needed help in getting this sorted. It has not taken long to notice my hips are so much looser and I can feel the benefits since I joined the club. I would highly recommend Yoga Fitness to everyone."</p><br>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+		<a name="mariyams_story"></a>
+	<h3>Mariyam's Story</h3>
+		<p><img src="Media/Mariyam.jpeg" alt="Mariyam" style="width:150px;height:150px;">"I had been training in various gyms around the country for the best part of 3 years now. I was attending 5 times a week for the first year. The sheer volume of the training mixed with my lacklustre approach to warming-up before working out and my failure to follow a cool-down and post-stretch routine eventually took its toll on my body. My mobility started to diminish in my lower body and shoulders. I could only train every second day due to aches, pains and general stiffness. The standard and quality of my training was beginning to decline so I decided to try <strong>Peace Of Mind</strong> Yoga club in an attempt to fix the issues that had been holding me back from developing my strength and fitness. I felt confident that attending <strong>Peace Of Mind</strong> on a relatively regular basis would remedy my physical ailments over time. The turnaround was quite dramatic.  Within a month the tightness in my lower back had significantly decreased to the point where it was barely noticeable; my shoulder mobility had improved and the flexibility in my muscles had greatly increased.  From that point on, my performance in sports became much better.  I never felt any tightness or strains when training and this allowed me to perform to my true potential.  The development of my mobility and flexibility allowed me to improve my technique and get more out of my training.  I am continuosly making progress in the gym now and thanks to <strong>Peace Of Mind</strong> I am able to comfortably train in both disciplines 5 times a week each with no pain or discomfort.  I would strongly recommend to anybody who plays sport or undertakes a lot of intense physical activity to incorporate Yoga into their regime as it has a great therapeutic effect on the body and will help you perform to the best of your ability on a regular basis."</p><br>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+	<hr>
+	<footer>
+		<form name="emailSubmit" onsubmit="return submitEmail()">
+			<br>Subscribe to our newsletter!<br> <input type="email" name="email" id="email" placeholder="Email">
+			<input type="submit" value="Submit" onclick="submitEmail(document.getElementByID('email').value)">
+		</form>
+		<br>Contact us at:<br>+353862738492<br>info@peaceofmind.ie
+	</footer>
+	
+	</article>
+	
+</body>
